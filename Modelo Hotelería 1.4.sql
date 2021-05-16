@@ -112,6 +112,7 @@ CREATE TABLE IF NOT EXISTS `hoteleria`.`tbl_reservaciones` (
   `PK_id_reservacion` INT NOT NULL,
   `PK_no_identificacion` INT DEFAULT NULL,
   `PK_id_habitacion` INT DEFAULT NULL,
+  `cantidad_personas` varchar(30) NULL DEFAULT NULL,
   `fecha_reserva` date NULL DEFAULT NULL,
   `desde` date NULL DEFAULT NULL,
   `hasta` date NULL DEFAULT NULL,
@@ -122,7 +123,7 @@ CREATE TABLE IF NOT EXISTS `hoteleria`.`tbl_reservaciones` (
   FOREIGN KEY (`PK_no_identificacion`) REFERENCES `tbl_huespedes`(`PK_no_identificacion`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
-INSERT INTO `hoteleria`.`tbl_reservaciones` (`PK_id_reservacion`, `PK_no_identificacion`, `PK_id_habitacion`, `fecha_reserva`, `desde`, `hasta`, `precio`, `estado`) VALUES ('1', '1', '1', '2021-04-17', '2021-04-19', '2021-04-22', '500', '1');
+INSERT INTO `tbl_reservaciones` (`PK_id_reservacion`, `PK_no_identificacion`, `PK_id_habitacion`, `cantidad_personas`, `fecha_reserva`, `desde`, `hasta`, `precio`, `estado`) VALUES ('1', '1', '1', '1 adultos y 1 niño', '2021-05-15', '2021-05-16', '2021-05-20', '750', '1');
 
 -- -----------------------------------------------------
 -- Table `hoteleria`.`tbl_facturacion`

@@ -179,20 +179,25 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Insert usuarios (Hoteleria)
 -- -----------------------------------------------------
-INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('1', 'jefferson', 'davila', 'jeff', '123', 'jeff@gmail.com', '1', '1', '2021-05-02 21:00:48');
-INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('2', 'esduardo', 'delaguila', 'esduardo10', '123', 'esduardo@gmail.com', '1', '1', '2021-05-02 21:00:48');
+INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('1', 'jefferson', 'davila', 'jeff', 'fb4bb9aedf25b93c33d81b131a867a8dd66aabd7', 'jeff@gmail.com', '1', '1', '2021-05-02 21:00:48');
+INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('2', 'esduardo', 'delaguila', 'esduardo10', 'c6c141abb1f7f0d00458db5dce4c936eb7f49342', 'esduardo@gmail.com', '1', '1', '2021-05-02 21:00:48');
+INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('3', 'leonel', 'dominguez', 'laionel', '92353e73d1e9a2ca46915efcb39bd6abdd9b1e0f', 'leonel@gmail.com', '1', '1', '2021-05-02 21:00:48');
+INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('4', 'luis', 'gomes', 'luisk', '73162717be71e5a82248365d899ce9fe98204f2f', 'luisg@gmail.com', '1', '1', '2021-05-02 21:00:48');
+INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('5', 'gerson', 'lee', 'gersonl', '88a2507ef77c7ffe65315a74796b93061ee33986', 'gersonl@gmail.com', '1', '1', '2021-05-02 21:00:48');
 -- -----------------------------------------------------
 -- Insert aplicacion (Hoteleria)
 -- -----------------------------------------------------
-INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2001', 'Mantenimiento Ama de Llaves', 'esta es una prueba', '1', '1');
-INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2002', 'Mantenimiento de Formas de pago', 'esta es una prueba','4', '1');
-INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2003', 'Mantenimiento de Habitaciones', 'esta es una prueba', '3', '1');
-INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2004', 'Mantenimiento de Clientes', 'esta es una prueba', '5', '1');
-INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2005', 'Mantenimiento de Pisos', 'esta es una prueba', '6', '1');
-INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2006', 'Mantenimiento de Servicios', 'esta es una prueba', '2', '1');
-INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2201', 'Procesos', 'esta es una prueba', '2', '1');
-INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2204', 'Objetos Perdidos', 'esta es una prueba', '3', '1');
-INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2205', 'Entrega de Objetos Perdidos', 'esta es una prueba', '4', '1');
+INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2001', 'Mantenimiento Ama de Llaves', 'Proceso para el área de hoteleria', '1', '1');
+INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2002', 'Mantenimiento de Formas de pago', 'Proceso para el área de hoteleria','1', '1');
+INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2003', 'Mantenimiento de Habitaciones', 'Proceso para el área de hoteleria', '1', '1');
+INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2004', 'Mantenimiento de Clientes', 'Proceso para el área de hoteleria', '1', '1');
+INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2005', 'Mantenimiento de Pisos', 'Proceso para el área de hoteleria', '1', '1');
+INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2006', 'Mantenimiento de Servicios', 'Proceso para el área de hoteleria', '1', '1');
+INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2201', 'Proceso de Reservacion de Habitacion', 'Proceso para el área de hoteleria', '2', '1');
+INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2202', 'Proceso Entregar o Recibir Habitacion', 'Proceso para el área de hoteleria', '2', '1');
+INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2203', 'Proceso de Facturación', 'Proceso para el área de hoteleria', '2', '1');
+INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2204', 'Registro de Objetos', 'Proceso para el área de hoteleria', '2', '1');
+INSERT INTO `tbl_aplicacion` (`PK_id_aplicacion`, `nombre_aplicacion`, `descripcion_aplicacion`, `no_reporteAsociado`, `estado_aplicacion`) VALUES ('2205', 'Proceso de Reservacion de Habitacion', 'Proceso para el área de hoteleria', '2', '1');
 -- -----------------------------------------------------
 -- Insert usuario_aplicacion (Hoteleria)
 -- -----------------------------------------------------
@@ -202,11 +207,12 @@ INSERT INTO `tbl_usuario_aplicacion` (`PK_id_usuario`, `PK_id_aplicacion`, `ingr
 INSERT INTO `tbl_usuario_aplicacion` (`PK_id_usuario`, `PK_id_aplicacion`, `ingresar`, `consulta`, `modificar`, `eliminar`, `imprimir`) VALUES ('2', '2004', '1', '1', '1', '1', '1');
 INSERT INTO `tbl_usuario_aplicacion` (`PK_id_usuario`, `PK_id_aplicacion`, `ingresar`, `consulta`, `modificar`, `eliminar`, `imprimir`) VALUES ('2', '2005', '1', '1', '1', '1', '1');
 INSERT INTO `tbl_usuario_aplicacion` (`PK_id_usuario`, `PK_id_aplicacion`, `ingresar`, `consulta`, `modificar`, `eliminar`, `imprimir`) VALUES ('2', '2006', '1', '1', '1', '1', '1');
-INSERT INTO `tbl_usuario_aplicacion` (`PK_id_usuario`, `PK_id_aplicacion`, `ingresar`, `consulta`, `modificar`, `eliminar`, `imprimir`) VALUES ('1', '2201', '1', '1', '1', '1', '1');
+
+INSERT INTO `tbl_usuario_aplicacion` (`PK_id_usuario`, `PK_id_aplicacion`, `ingresar`, `consulta`, `modificar`, `eliminar`, `imprimir`) VALUES ('2', '2201', '1', '1', '1', '1', '1');
+INSERT INTO `tbl_usuario_aplicacion` (`PK_id_usuario`, `PK_id_aplicacion`, `ingresar`, `consulta`, `modificar`, `eliminar`, `imprimir`) VALUES ('2', '2202', '1', '1', '1', '1', '1');
+INSERT INTO `tbl_usuario_aplicacion` (`PK_id_usuario`, `PK_id_aplicacion`, `ingresar`, `consulta`, `modificar`, `eliminar`, `imprimir`) VALUES ('2', '2203', '1', '1', '1', '1', '1');
 INSERT INTO `tbl_usuario_aplicacion` (`PK_id_usuario`, `PK_id_aplicacion`, `ingresar`, `consulta`, `modificar`, `eliminar`, `imprimir`) VALUES ('2', '2204', '1', '1', '1', '1', '1');
 INSERT INTO `tbl_usuario_aplicacion` (`PK_id_usuario`, `PK_id_aplicacion`, `ingresar`, `consulta`, `modificar`, `eliminar`, `imprimir`) VALUES ('2', '2205', '1', '1', '1', '1', '1');
-
-
 
 -- -----------------------------------------------------
 -- Insert usuarios (Comercial)
