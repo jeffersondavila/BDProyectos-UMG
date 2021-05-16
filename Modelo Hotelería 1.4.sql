@@ -65,6 +65,7 @@ CREATE TABLE IF NOT EXISTS `hoteleria`.`tbl_metodos_de_pago` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 INSERT INTO `hoteleria`.`tbl_metodos_de_pago` (`PK_id_metodo`, `nombre_metodo`, `descripcion_metodo`, `estado_metodo`) VALUES ('1', 'Tarjeta', 'Pago con tarjeta', '1');
+INSERT INTO `hoteleria`.`tbl_metodos_de_pago` (`PK_id_metodo`, `nombre_metodo`, `descripcion_metodo`, `estado_metodo`) VALUES ('2', 'Efectivo', 'Pago en efectivo', '1');
 
 -- -----------------------------------------------------
 -- Table `hoteleria`.`tbl_huespedes`
@@ -117,6 +118,7 @@ CREATE TABLE IF NOT EXISTS `hoteleria`.`tbl_reservaciones` (
   FOREIGN KEY (`PK_no_identificacion`) REFERENCES `tbl_huespedes`(`PK_no_identificacion`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
+INSERT INTO `hoteleria`.`tbl_reservaciones` (`PK_id_reservacion`, `PK_no_identificacion`, `PK_id_habitacion`, `fecha_reserva`, `desde`, `hasta`, `precio`, `estado`) VALUES ('1', '1', '1', '2021-04-17', '2021-04-19', '2021-04-22', '500', '1');
 
 -- -----------------------------------------------------
 -- Table `hoteleria`.`tbl_facturacion`
@@ -149,8 +151,28 @@ CREATE TABLE IF NOT EXISTS `hoteleria`.`tbl_objetosperdidos` (
   `PK_id_ama_de_llaves` INT DEFAULT NULL,
   `fecha_encontrado` date NULL DEFAULT NULL,
   `objeto` VARCHAR(50) NULL DEFAULT NULL,
+  `identificacion` VARCHAR(50) NULL DEFAULT NULL,
+  `nombre` VARCHAR(50) NULL DEFAULT NULL,
+  `estado` TINYINT NULL DEFAULT NULL,
   PRIMARY KEY (`PK_id_objeto`),
     FOREIGN KEY (`PK_id_habitacion`) REFERENCES `tbl_mantenimiento_habitaciones`(`PK_id_habitacion`),
   FOREIGN KEY (`PK_id_ama_de_llaves`) REFERENCES `tbl_ama_de_llaves`(`PK_id_ama_de_llaves`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+-- -----------------------------------------------------
+-- Table `hoteleria`.`tbl_entrega_habitacion`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hoteleria`.`tbl_entrega_habitacion` (
+  `PK_id_entrega` INT NOT NULL ,
+  `no_factura` INT DEFAULT NULL,
+  `PK_id_habitacion` INT DEFAULT NULL,
+  `nombre`VARCHAR(50) NULL DEFAULT NULL,
+   `no_reserva` INT DEFAULT NULL,
+  `fecha`  date NULL DEFAULT NULL,
+  `estado`VARCHAR(50) NULL DEFAULT NULL,
+  PRIMARY KEY (`PK_id_entrega`),
+  FOREIGN KEY (`no_factura`) REFERENCES `tbl_facturacion`(`PK_id_factura`),
+  FOREIGN KEY (`PK_id_habitacion`) REFERENCES `tbl_reservaciones`(`PK_id_reservacion`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
