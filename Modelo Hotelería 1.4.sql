@@ -151,6 +151,9 @@ CREATE TABLE IF NOT EXISTS `hoteleria`.`tbl_objetosperdidos` (
   `PK_id_ama_de_llaves` INT DEFAULT NULL,
   `fecha_encontrado` date NULL DEFAULT NULL,
   `objeto` VARCHAR(50) NULL DEFAULT NULL,
+  `identificacion` VARCHAR(50) NULL DEFAULT NULL,
+  `nombre` VARCHAR(50) NULL DEFAULT NULL,
+  `estado` TINYINT NULL DEFAULT NULL,
   PRIMARY KEY (`PK_id_objeto`),
     FOREIGN KEY (`PK_id_habitacion`) REFERENCES `tbl_mantenimiento_habitaciones`(`PK_id_habitacion`),
   FOREIGN KEY (`PK_id_ama_de_llaves`) REFERENCES `tbl_ama_de_llaves`(`PK_id_ama_de_llaves`))
