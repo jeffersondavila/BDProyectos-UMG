@@ -76,7 +76,6 @@ CREATE TABLE IF NOT EXISTS `hoteleria`.`tbl_metodos_de_pago` (
    PRIMARY KEY (`PK_id_metodo`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
-
 INSERT INTO `hoteleria`.`tbl_metodos_de_pago` (`PK_id_metodo`, `nombre_metodo`, `descripcion_metodo`, `estado_metodo`) VALUES ('1', 'Tarjeta', 'Pago con tarjeta', '1');
 INSERT INTO `hoteleria`.`tbl_metodos_de_pago` (`PK_id_metodo`, `nombre_metodo`, `descripcion_metodo`, `estado_metodo`) VALUES ('2', 'Efectivo', 'Pago en efectivo', '1');
 INSERT INTO `tbl_metodos_de_pago` (`PK_id_metodo`, `nombre_metodo`, `descripcion_metodo`, `estado_metodo`) VALUES ('3', 'Criptomoneda Ethereum', 'Fase beta del método de prueba con CriptoMoneda Ethereum', '0');
@@ -165,10 +164,6 @@ CREATE TABLE IF NOT EXISTS `hoteleria`.`tbl_facturacion` (
   FOREIGN KEY (`PK_id_reservacion`) REFERENCES `tbl_reservaciones`(`PK_id_reservacion`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
-INSERT INTO `hoteleria`.`tbl_facturacion` (`PK_id_factura`, `PK_id_reservacion`, `nombre_factura`, `fechaEntrada_factura`, `fechaSalida_factura`, `formaPago_factura`, `totalReservacion_factura`, `totalServicios_factura`, `totalFacturacion_factura`, `estado`) VALUES ('1', '1', 'Alberto Suarez', '2021-05-16', '2021-05-20', 'Efectivo', '1000', '1425', '2425', '1');
-INSERT INTO `hoteleria`.`tbl_facturacion` (`PK_id_factura`, `PK_id_reservacion`, `nombre_factura`, `fechaEntrada_factura`, `fechaSalida_factura`, `formaPago_factura`, `totalReservacion_factura`, `totalServicios_factura`, `totalFacturacion_factura`, `estado`) VALUES ('2', '2', 'Luis Carlos Chavez', '2021-05-16', '2021-05-20', 'Tarjeta', '750', '1425', '2175', '1');
-INSERT INTO `hoteleria`.`tbl_facturacion` (`PK_id_factura`, `PK_id_reservacion`, `nombre_factura`, `fechaEntrada_factura`, `fechaSalida_factura`, `formaPago_factura`, `totalReservacion_factura`, `totalServicios_factura`, `totalFacturacion_factura`, `estado`) VALUES ('3', '3', 'Leonel Gomez', '2021-05-16', '2021-05-20', 'Efectivo', '1500', '1275', '2775', '1');
-INSERT INTO `hoteleria`.`tbl_facturacion` (`PK_id_factura`, `PK_id_reservacion`, `nombre_factura`, `fechaEntrada_factura`, `fechaSalida_factura`, `formaPago_factura`, `totalReservacion_factura`, `totalServicios_factura`, `totalFacturacion_factura`, `estado`) VALUES ('4', '4', 'Jefferson Dominguez', '2021-05-16', '2021-05-20', 'Tarjeta', '7500', '1425', '8925', '1');
 
 -- -----------------------------------------------------
 -- Table `hoteleria`.`tbl_objetosperdidos`
