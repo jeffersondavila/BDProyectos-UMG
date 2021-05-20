@@ -23,6 +23,7 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
+
 DROP DATABASE finanzas;
 CREATE DATABASE finanzas;
 USE finanzas;
@@ -89,7 +90,7 @@ INSERT INTO `banco` (`Codigo_Banco`, `Nombre_Banco`, `Clave_Banco`, `Telefono_Ba
 
 CREATE TABLE `cheque` (
   `Numero_Cheque` varchar(255) NOT NULL,
-  `Fecha_Cheque` date NOT NULL,
+  `Fecha_Cheque` varchar(255)NOT NULL,
   `FK_Banco` varchar(255) NOT NULL,
   `FK_Cuenta` varchar(255) NOT NULL,
   `FK_Cuentahabiente` varchar(255) NOT NULL,
@@ -101,11 +102,13 @@ CREATE TABLE `cheque` (
 --
 
 INSERT INTO `cheque` (`Numero_Cheque`, `Fecha_Cheque`, `FK_Banco`, `FK_Cuenta`, `FK_Cuentahabiente`, `Monto_Cheque`) VALUES
-('00022', '0000-00-00', 'AC0221', '499399', '33949', 455),
-('00023', '0000-00-00', 'AC0221', '499399', '12343', 3433),
-('00024', '0000-00-00', 'AC0221', '499399', '12444', 45444),
-('00025', '0000-00-00', 'AC0221', '499399', '43422', 433),
-('00026', '0000-00-00', 'AC0221', '564544', '43221', 345345);
+
+('00022', '17/05/2020', 'AC0221', '499399', '33949', 455),
+('00023', '17/05/2020', 'AC0221', '499399', '12343', 3433),
+('00024', '17/05/2020', 'AC0221', '499399', '12444', 45444),
+('00025', '17/05/2020', 'AC0221', '499399', '43422', 433),
+('00026', '17/05/2020', 'AC0221', '564544', '43221', 345345);
+
 
 -- --------------------------------------------------------
 
