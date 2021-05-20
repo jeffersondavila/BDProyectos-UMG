@@ -241,10 +241,10 @@ INSERT INTO `tbl_usuario_aplicacion` (`PK_id_usuario`, `PK_id_aplicacion`, `ingr
 -- -----------------------------------------------------
 -- Insert usuarios (Comercial)
 -- -----------------------------------------------------
-INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('11', 'carlos', 'carlos', 'carlos', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'cflorezd@gmail.com', '1', '1', '2021-05-02 21:00:48');
-INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('10', 'esduardo', 'esduardo', 'esduardo', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'esduardo@gmail.com', '1', '1', '2021-05-02 21:00:48');
-INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('12', 'diana', 'diana', 'diana', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'diana@gmail.com', '1', '1', '2021-05-02 21:00:48');
-INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('13', 'rita', 'rita  ', 'rita', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'esduardo@gmail.com', '1', '1', '2021-05-02 21:00:48');
+INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('11', 'carlos', 'carlos', 'carlos', '8cb2237d0679ca88db6464eac60da96345513964', 'cflorezd@gmail.com', '1', '1', '2021-05-02 21:00:48');
+INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('10', 'esduardo', 'esduardo', 'esduardo', '8cb2237d0679ca88db6464eac60da96345513964', 'esduardo@gmail.com', '1', '1', '2021-05-02 21:00:48');
+INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('12', 'diana', 'diana', 'diana', '8cb2237d0679ca88db6464eac60da96345513964', 'diana@gmail.com', '1', '1', '2021-05-02 21:00:48');
+INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES ('13', 'rita', 'rita  ', 'rita', '8cb2237d0679ca88db6464eac60da96345513964', 'esduardo@gmail.com', '1', '1', '2021-05-02 21:00:48');
 -- -----------------------------------------------------
 -- Insert aplicacion (Comercial)
 -- -----------------------------------------------------
@@ -282,7 +282,7 @@ INSERT INTO `tbl_usuario_aplicacion` (`PK_id_usuario`, `PK_id_aplicacion`, `ingr
 -- Insert tbl_usuario (Finanzas)
 -- -----------------------------------------------------
 INSERT INTO `tbl_usuario` (`PK_id_usuario`, `nombre_usuario`, `apellido_usuario`, `username_usuario`, `password_usuario`, `correo_usuario`, `cambio_password`, `estado_usuario`, `ultima_conexion`) VALUES
-('1000', 'Diego', 'Vásquez', 'dievas2001', 'gamer070', 'dvasquez@yahoo.es', 0, 1, '2021-05-17 23:00:00');
+('1000', 'Diego', 'Vásquez', 'dievas2001', '8cb2237d0679ca88db6464eac60da96345513964', 'dvasquez@yahoo.es', 0, 1, '2021-05-17 23:00:00');
 -- -----------------------------------------------------
 -- Insert tbl_aplicacion (Finanzas)
 -- -----------------------------------------------------
