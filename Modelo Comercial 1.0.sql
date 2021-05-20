@@ -26,6 +26,8 @@ CREATE TABLE IF NOT EXISTS `areacomercial`.`tbl_producto` (
   `precio_producto` INT(200) NOT NULL,
   `descripcion_producto` VARCHAR(200) NOT NULL,
   `estatus_producto` VARCHAR(200) NOT NULL,
+  `bodega` VARCHAR(200) NOT NULL,
+  `fechaIngreso` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`PK_id_producto`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
@@ -38,6 +40,10 @@ CREATE TABLE IF NOT EXISTS `areacomercial`.`tbl_proceso_producto` (
 `nombre_producto` VARCHAR(45) NoT NULL,
 `nombre_bodega` VARCHAR(45) NoT NULL,
 `existencias_producto` VARCHAR(45) NoT NULL,
+`fechaActualizacion` VARCHAR(45) NoT NULL,
+`ProductoNuevo` VARCHAR(45) NoT NULL,
+`NuevaExistencia` VARCHAR(45) NoT NULL,
+`BodegasNuevaExistencia` VARCHAR(45) NoT NULL,
 PRIMARY KEY (`PK_id_procesoproducto`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
@@ -58,7 +64,8 @@ Precio_producto varchar(30) ,
 Cantidad_producto varchar(30) ,
 Subtotal_producto varchar(30) ,
 Total_producto varchar(30) ,
-Fecha_producto varchar(30) 
+Fecha_producto varchar(30),
+Pago_producto varchar(30)
 
 
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -86,7 +93,6 @@ Cantidad  int (25)  NOT NULL,
 Precio_por_unidad  int (25)  NOT NULL,
 Monto  int (25)  NOT NULL,
 Total   VARCHAR(15)  NOT NULL,
-
  PRIMARY KEY ( id_cliente)
 );
 
@@ -101,8 +107,6 @@ telefono int (25)  NOT NULL,
 producto VARCHAR (15)  NOT NULL, 
 Detalle VARCHAR(25)  NOT NULL,
 Cantidad VARCHAR(25)  NOT NULL, 
-
-
  PRIMARY KEY ( Id_pedido)
 )ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
@@ -145,19 +149,18 @@ DEFAULT CHARACTER SET = utf8;
 
 
 CREATE TABLE  tbl_cliente (
-Id_cliente INT NOT NULL AUTO_INCREMENT, 
+ID  VARCHAR(25)  NOT NULL, 
 cliente VARCHAR(25)  NOT NULL,  
 Nit VARCHAR(25)  NOT NULL, 
-Monto VARCHAR(25)  NOT NULL, 
 Estatus_Cliente VARCHAR(25)  NOT NULL, 
-telefono VARCHAR(25)  NOT NULL, 
-producto VARCHAR(25)  NOT NULL,  
-cuenta VARCHAR(25)  NOT NULL, 
-  PRIMARY KEY (Id_cliente)
+telefono VARCHAR(25)  NOT NULL,
+  PRIMARY KEY (ID)
   )
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
-INSERT INTO `areacomercial`.`tbl_cliente` (`Id_cliente`, `cliente`, `Nit`, `Monto`, `Estatus_Cliente`, `telefono`, `producto`, `cuenta`) VALUES ('1', 'Rayovac', '78687', '100', '1', '786', 'casa', '876');
+
+/*INSERT INTO `areacomercial`.`tbl_cliente` (`Id_cliente`, `cliente`, `Nit`, `Monto`, `Estatus_Cliente`, `telefono`, `producto`, `cuenta`) VALUES ('1', 'Rayovac', '78687', '100', '1', '786', 'casa', '876');
+ */
  CREATE TABLE  tbl_acreedores (
 Id_acreedores INT NOT NULL AUTO_INCREMENT, 
 acreedores VARCHAR(25)  NOT NULL,  
